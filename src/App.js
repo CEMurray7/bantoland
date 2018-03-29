@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+// import PortraitPage from './portrait/portrait';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
+      <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Link to={"/" }>
+
+        <p><a href="/portrait">Portrait</a></p>
+        <p><a href="/archive">Archive</a></p>
+        <p><a href="newyork">New York</a></p>
+        <p><a href="chicago">Chicago</a></p>
+
+      </Link>
+        </div>
+        </Router>
     );
   }
 }
