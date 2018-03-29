@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-export default class NewYork extends React.Component {
+class NewYork extends React.Component {
 
   render() {
     const images = [
@@ -31,3 +31,5 @@ export default class NewYork extends React.Component {
     );
   }
 }
+
+ReactDOM.render(<NewYork />, document.getElementById('newyork'));
