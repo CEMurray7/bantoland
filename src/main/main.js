@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Route, Link } from 'react-router-dom';
+import { BrowserRouter as Route, NavLink } from 'react-router-dom';
 
 const Main = () => (
   <div className="primary-layout">
@@ -16,7 +16,7 @@ const Main = () => (
   </div>
 )
 
-const HomePage = () => <div>Home Page </div>
+const MainPage = () => <NavLink>Main Page </NavLink>
 const ArchivePage = () => <div>Archive Page </div>
 const PortraitPage = () => <div>Portrait Page </div>
 const ChicagoPage = () => <div> Chicago Page </div>

@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import PortraitPage from './portrait/portrait';
+import NewyorkPage from './newyork/newyork';
+import ChicagoPage from './chicago/chicago';
+import Main from './main/main';
 import './App.css';
 
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <Router>
@@ -26,24 +29,10 @@ class App extends Component {
   </NavLink>
 </div>
         </Router>
-
+// <Main />
     );
+
   }
 }
-// ReactDOM.render(
-//   <Router>
-//   <App />
-//   </Router>
-// );
-// const App = () => (
-//   <div>
-//     <nav>
-//       <Link to="/portrait">Portrait</Link>
-//       </nav>
-//   <div>
-//     <Route path="/portrait" component={PortraitPage} />
-//   </div>
-//   </div>
-// )
 
 export default App;

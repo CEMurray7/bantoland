@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'reat-router-dom';
+import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 
 export default class ArchivePage extends React.Component {
   render() {
@@ -20,10 +20,7 @@ export default class ArchivePage extends React.Component {
         // original: 'https://s3.amazonaws.com/sean.banton/whore.jpg',
         item4: 'https://s3.amazonaws.com/sean.banton/whorethumb.jpg',
       },
-      // {},
-      // {},
-      // {},
-      // {},
+  
 
     ]
     return (

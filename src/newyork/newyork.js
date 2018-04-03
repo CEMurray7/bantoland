@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import ReactDOM from 'react-dom';
 
 class NewYork extends React.Component {
 
@@ -32,4 +33,5 @@ class NewYork extends React.Component {
   }
 }
 
-ReactDOM.render(<NewYork />, document.getElementById('newyork'));
+export default NewYork;
+// ReactDOM.render(<NewYork />, document.getElementById('root'));
