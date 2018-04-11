@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 
-export default class ArchivePage extends React.Component {
+export default class Archive extends React.Component {
   render() {
     const images = [
       {
@@ -20,11 +20,11 @@ export default class ArchivePage extends React.Component {
         // original: 'https://s3.amazonaws.com/sean.banton/whore.jpg',
         item4: 'https://s3.amazonaws.com/sean.banton/whorethumb.jpg',
       },
-  
+
 
     ]
     return (
-      <ArchivePage items={images} />
+      <Archive items={images} />
     );
   }
 }

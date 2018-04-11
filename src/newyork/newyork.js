@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
 class NewYork extends React.Component {

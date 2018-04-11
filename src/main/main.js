@@ -6,13 +6,13 @@ const Main = () => (
     <header>
     SEAN FRANCIS BANTON
     </header>
-    <main>
+    <Main>
       <Route path="/" exact component={MainPage} />
       <Route path="/archive" component={ArchivePage} />
       <Route path="/portrait" component={PortraitPage} />
       <Route path="/chicago" component={ChicagoPage} />
       <Route path="/newyork" component={NewyorkPage} />
-    </main>
+    </Main>
   </div>
 )
 

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import PortraitPage from './portrait/portrait';
-import NewyorkPage from './newyork/newyork';
-import ChicagoPage from './chicago/chicago';
-import Main from './main/main';
+import Portrait from './portrait/portrait';
+import NewYork from './newyork/newyork';
+import Chicago from './chicago/chicago';
+import Archive from './archive/archive';
+// import Main from './main/main';
 import './App.css';
 
 
@@ -15,16 +16,16 @@ class App extends React.Component {
       <div className="App">
       <NavLink to={"/" }>
       <div>
-        <NavLink to="/portrait">Portrait</NavLink>
+      <NavLink>  <Route path="/portrait" component={Portrait} />Portrait</NavLink>
       </div>
       <div>
-        <NavLink to="/archive">Archive</NavLink>
+        <NavLink><Route path="/archive" component={Archive}/>Archive</NavLink>
       </div>
       <div>
-        <NavLink to="newyork">New York</NavLink>
+        <NavLink><Route path="/newyork" component={NewYork}/>New York</NavLink>
         </div>
       <div>
-        <NavLink to="chicago">Chicago</NavLink>
+        <NavLink><Route path="/chicago" component={Chicago}/>Chicago</NavLink>
       </div>
   </NavLink>
 </div>
